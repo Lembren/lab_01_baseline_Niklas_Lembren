@@ -13,15 +13,15 @@
 
 
 int main(void){
-    blink_Led();
-    //uart_init(MYUBRR);
+    //blink_Led();
+    uart_init(MYUBRR);
     //char n = 'N';
-    //char str[] = "Niklas\n\r";
-    //while (1) {
-    //    uart_putstr(str);
+    char str[] = "Niklas\n";
+    while (1) {
+        uart_putstr(str);
     //    uart_putchar(n);
     //    uart_echo();
-    //    _delay_ms(2000);
-    //}
+        _delay_ms(2000);
+    }
     return 0;
 }
